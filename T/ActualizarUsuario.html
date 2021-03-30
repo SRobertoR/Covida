@@ -1,0 +1,38 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin título</title>
+<style type="text/css">
+body,td,th {
+	color: #FFF;
+	font-size: 18px;
+}
+body {
+	background-image: url(images/US1.jpg);
+}
+.botones a {
+	color: #0F3;
+}
+</style>
+</head>
+<body>
+	<font face="Arial" color="#FFFFFF" size="6">
+	<h1 align="center"><i>SpeedFull</i></h1>
+	</font>
+<form action="ActualizarUsuario.php" method="post">
+
+	<h1 align="center">ACTUALIZAR DATOS</h1>    
+    <div align="center">
+   	Para mayor seguridad ingresar nueva mente su contraseña <br>
+    <input type="password" name="txt_Contraseña" pattern="[A-Za-z0-9]{8,20}" title="Un código de seguridad válido consiste en una 		cadena con 8 a 20 caracteres, cada uno de los cuales es una letra o un dígito" required>
+	</div>
+    
+    <div class="botones" align="center">
+   	  <a href="interfazUsuario.html">Atras</a>
+	  <input type="submit" name="button2" id="button2" value="Validar" />
+    </div>
+</form>
+</body>
+</html>

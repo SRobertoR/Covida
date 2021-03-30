@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Generar IMC</title>
+<style type="text/css">
+body,td,th {
+	color: #FFF;
+	font-size: 18px;
+}
+body {
+	background-image: url(images/IS2.jpg);
+}
+.botones {
+	color: #0F3;
+}
+</style>
+</head>
+<body>
+<form action="GenerarImc.php" method="post"> 
+	
+    <font face="Arial" color="#FFFFFF" size="6">
+	<h1 align="center"><i>SpeedFull</i></h1>
+	</font>
+    
+	<h1 align="center">GENERAR IMC</h1>
+    
+    <div align="center">
+   	<h1>Para mayor seguridad ingresar nueva mente su contraseña</h1><br><br>
+    <input type="password" name="Contra" pattern="[A-Za-z0-9]{8,20}" title="Un código de seguridad válido consiste en una 		cadena con 8 a 20 caracteres, cada uno de los cuales es una letra o un dígito" required>
+	<p align="center">&nbsp;</p>
+    </div>
+   
+    <div align="center">
+  		<a href="interfazUsuario.html">Atras</a>
+   		<input type="submit" name="button" id="button" value="Generar" />
+        <p align="center">&nbsp;</p>
+	</div>
+</form>
+</body>
+</html>

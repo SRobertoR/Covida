@@ -1,0 +1,211 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Crear Diseño</title>
+<style type="text/css">
+body {
+	background-image: url(images/worlddiseño.jpg);
+	background-color: #000;
+}
+body,td,th {
+	color: #FFF;
+	font-size: larger;
+}
+#form1 .botones a strong {
+	color: #0C3;
+}
+
+
+   input {
+     width: 250px;
+     padding: 5px;
+   }
+   .redondeado {
+     border-radius: 5px;
+   }
+   .confondo {
+     background-color: #def;
+   }
+   .sinborde {
+     border: 0;
+   }
+   .sinbordefondo {
+     background-color: #eee;
+     border: 0;
+   }
+   .outlinenone {
+     outline: none;
+     background-color: #dfe;
+     border: 0;
+   }
+   .redondeadonorelieve {
+     border-radius: 5px;
+     border: 1px solid #39c;
+   }
+   
+   select {
+     border: none;
+     font-size: 14px;
+     height: 30px;
+     padding: 5px;
+     width: 250px;
+  }
+
+/* Desaparecer */
+.desaparecer {
+  display: none;
+}
+
+#estilo-foto{
+	padding:1px;
+	background-color: #5CEC83;
+	width:150px;
+	position:relative;
+}
+#foto{
+	left:c;
+	top:20;
+	right:0;
+	bottom:0;
+	width:100%;
+	height:100%;
+	opacity:0;
+}
+
+</style>
+</head>
+
+<body>
+
+<font face="Arial" size="15" color="#FFFFFF">
+	<h1 align="center"><i>Crear Diseño</i></h1>
+</font>
+
+
+<form id="formulario1" name="Registro" method="post" target="_blank" action="Comprar.html">
+
+<script type="text/javascript">
+
+function Desabilitar(){
+var camp1 = document.getElementById("selectTipo").value;
+var tela = document.getElementById("tipo-de-tela");
+var img1 = document.getElementById("imgdise");
+var colorcubrebocas = document.getElementById("ColorCubre");
+
+
+if (camp1 == "1") {
+  tela.style.display = "block";
+  img1.style.display = "none";
+  colorcubrebocas.style.display = "none";
+  
+} else if(camp1 == "2"){
+  tela.style.display = "none";
+  img1.style.display = "block";
+  colorcubrebocas.style.display = "block";
+//imgdise
+} else {
+  tela.style.display = "none";
+  img1.style.display = "none";
+  colorcubrebocas.style.display = "none";
+}
+
+}
+</script>
+
+		<div align="center">
+		   <h2> Seleccione el tipo de corte:<br></h2>
+		   <p><a href="#" class="image full"><img src="images/Tiposcubrebocas.png" alt="" width="400" height="100"></a></p>
+			
+			<select name="selectCorte" id="selectCorte">
+					<option value="1">Corte 1</option>
+					<option value="2">Corte 2</option>
+					<option value="3">Corte 3</option>
+			</select>
+		</div>
+		
+		<div align="center">
+		   <h2> Imagen o Tipo de tela:<br></h2>
+		   	
+			<select name="Selecciona" id="selectTipo" onclick="Desabilitar()"  placeholder="Seleciona">
+					<option value="0" selected>Seleciona</option>
+					<option value="1">Tela</option>
+					<option value="2">Imagen</option>
+			</select>
+		</div><br>
+		
+
+		<div align="center" id="tipo-de-tela" style="display: none;">
+		   <h2> Seleccione el tipo de Tela:</h2>
+		<p><a href="#" class="image full"><img src="images/telascatalogo.jpg" alt="" width="700" height="200"></a></p>            
+			
+			<select name="selectTela" id="selectTela">
+					<option value="1">Tela 1</option>
+					<option value="2">Tela 2</option>
+					<option value="3">Tela 3</option>
+					<option value="4">Tela 4</option>
+					<option value="5">Tela 5</option>
+					<option value="6">Tela 6</option>
+					<option value="7">Tela 7</option>
+					<option value="8">Tela 8</option>
+					<option value="9">Tela 9</option>
+					<option value="10">Tela 10</option>
+					<option value="11">Tela 11</option>
+					<option value="12">Tela 12</option>
+					<option value="13">Tela 13</option>
+					<option value="14">Tela 14</option>
+					<option value="15">Tela 15</option>
+					<option value="16">Tela 16</option>
+					<option value="17">Tela 17</option>
+					<option value="18">Tela 18</option>
+					<option value="19">Tela 19</option>
+					<option value="20">Tela 20</option>
+					<option value="21">Tela 21</option>
+					<option value="22">Tela 22</option>
+					<option value="23">Tela 23</option>
+					<option value="24">Tela 24</option>
+					<option value="25">Tela 25</option>
+					<option value="26">Tela 26</option>
+					<option value="27">Tela 27</option>
+					<option value="28">Tela 28</option>
+					<option value="29">Tela 29</option>
+					<option value="30">Tela 30</option>
+			</select>
+			
+		</div><br>
+		
+		<div id="imgdise" align="center" style="display: none;">
+			<div id="estilo-foto" align="center">
+				<h2> Ingrese la imagen:</h2>
+				<input type="file" name="Imagen" required="required" id="foto"/>
+			</div>
+		</div><br>
+		
+		<div id="ColorCubre" align="center" style="display: none;">
+			<h2>Seleccione el color:</h2>
+			<input type="color">
+		</div>
+		
+		<div align="center">
+		   <h2> Seleccione el Tamaño:</h2>
+	
+			<select name="selectTamaño" id="selectTamaño">
+					<option value="1">Chico</option>
+					<option value="2">Mediano</option>
+					<option value="3">Grande</option>
+			</select>
+			
+		</div><br>
+		
+		
+
+		<div align="center" class="botones">
+			<a href="MenuDiseño.html"><strong>Atras</strong></a><br>
+			<input type="button"  value="Generar diseño" />
+			<input type="button" value="Comprar" onclick="location.href='Comprar.html'"></input>
+		</div>
+		<p align="center">&nbsp;</p>
+</form>
+
+</body>
+</html>

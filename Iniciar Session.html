@@ -1,77 +1,89 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
- <title>Iniciar Sesión</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Iniciar Sesión</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-<style type="text/css">
-body,td,th {
-	color: #FFF;
-	font-size: 18px;
-}
-body {
-	background-image: url(images/iniciocovida.png);
-	font-size: 16px;
-}
-#form1 .botones a strong {
-	color: #0C3;
-}
+  <style type="text/css">
+    body,
+    td,
+    th {
+      color: #FFF;
+      font-size: 18px;
+    }
 
-   input {
-     width: 250px;
-     padding: 5px;
-   }
-   .redondeado {
-     border-radius: 5px;
-   }
-   .confondo {
-     background-color: #def;
-   }
-   .sinborde {
-     border: 0;
-   }
-   .sinbordefondo {
-     background-color: #eee;
-     border: 0;
-   }
-   .outlinenone {
-     outline: none;
-     background-color: #dfe;
-     border: 0;
-   }
-   .redondeadonorelieve {
-     border-radius: 5px;
-     border: 1px solid #39c;
-   }
+    body {
+      background-image: url(images/iniciocovida.png);
+      font-size: 16px;
+    }
 
+    #form1 .botones a strong {
+      color: #0C3;
+    }
 
-</style>
+    input {
+      width: 250px;
+      padding: 5px;
+    }
+
+    .redondeado {
+      border-radius: 5px;
+    }
+
+    .confondo {
+      background-color: #def;
+    }
+
+    .sinborde {
+      border: 0;
+    }
+
+    .sinbordefondo {
+      background-color: #eee;
+      border: 0;
+    }
+
+    .outlinenone {
+      outline: none;
+      background-color: #dfe;
+      border: 0;
+    }
+
+    .redondeadonorelieve {
+      border-radius: 5px;
+      border: 1px solid #39c;
+    }
+  </style>
 </head>
 
 <body>
 
-<font face="Arial" size="15" color="#FFFFFF">
-<h1 align="center"><i>Covida</i></h1>
-	</font>
+  <font face="Arial" size="15" color="#FFFFFF">
+    <h1 align="center"><i>Covida</i></h1>
+  </font>
 
-	<form id="form1" name="form1" method="post" action="twocolumn3.html">
+  <form id="form1" name="form1">
 
-	<h1 align="center"><strong>Iniciar Sesión</strong></h1>
+    <h1 align="center"><strong>Iniciar Sesión</strong></h1>
 
-		<div align="center">
-		   <strong> Ingrese su correo electronico</strong><br><br>
-			<input required="required" type="text" placeholder="ejemplo@correo.com" name="ValidarCorreo" id="textfield" /><br><br>
-		</div>
-	<div align="center">
-		<strong>Ingrese su Contraseña</strong><br><br>
-		<input required="required" type="password" placeholder="Contraseña" name="ValidarContra" id="textfield" /><br><br>
-	</div>
-	<div align="center" class="botones">
-		<a href="FormularioRegistro.html"><strong>Registrate</strong></a>
-		<input type="submit" name="button" id="button" value="Iniciar Sesion" />
-	</div>
+    <div align="center">
+      <strong> Ingrese su correo electronico</strong><br><br>
+      <input required="required" type="text" placeholder="ejemplo@correo.com" name="ValidarCorreo"
+        id="textfield" /><br><br>
+    </div>
+    <div align="center">
+      <strong>Ingrese su Contraseña</strong><br><br>
+      <input required="required" type="password" placeholder="Contraseña" name="ValidarContra" id="textfield" /><br><br>
+    </div>
+    <div align="center" class="botones">
+      <a href="FormularioRegistro.html"><strong>Registrate</strong></a>
+      <input type="button" value="Iniciar Sesion" onclick="location.href='twocolumn3.html'"></input>
+    </div>
 
-	</form>
-<p align="center">&nbsp;</p>
+  </form>
+  <p align="center">&nbsp;</p>
 </body>
+
 </html>
